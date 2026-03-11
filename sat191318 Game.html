@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>sat191318 Game</title>
+    <meta name="viewport" content="width=device-width, inital-scale=1.0"/>
+    <style>
+    body{
+        background-color: #c3f6ff;
+    }
+    .title {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 5%;
+        color: rgb(0, 0, 0);
+    }
+    .text_1{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10%;
+    }
+    .projects_png1{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20%;
+        font-size: large;
+    }
+    .pictures{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 40%;
+    }
+    .基本操作{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 900px;
+    }
+    .核心玩法機制{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 1000px;
+    }
+    .常見問題{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 1100px;
+    }
+    .sat191318{
+        position: absolute;
+        top: 1300px; 
+    }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>歡迎來到我的網頁</h1>
+</div>
+    <div class="projects_png1">
+        <a href="https://scratch.mit.edu/projects/823545446/">100關跑酷 (100%): https://scratch.mit.edu/projects/823545446/</a>
+        <h2>目錄</h2>
+        <ul>
+            <li><a href="#一、基本操作">一、基本操作</a></li>
+            <li><a href="#二、核心玩法機制">二、核心玩法機制</a></li>
+            <li><a href="#三、常見問題">三、常見問題</a></li>
+        </ul>
+    </div>
+    <div class="text_1">
+        <h2>這就是我的熱門遊戲</h2>
+    </div>
+    <div class="pictures">
+        <img src="100關跑酷 (100%).png" width="700" height="500">
+    </div>
+    <div class="基本操作">
+        <h2>一、基本操作</h2>
+        <p id="一、基本操作">移動左右移動：鍵盤（←/→或A/D鍵）或手把方向鍵，控制角色橫向移動。<br>跳躍：按空白鍵、↑/W鍵，跳躍。</p>
+    </div>
+    <div class="核心玩法機制">
+        <h2>二、核心玩法機制</h2>
+        <p id="二、核心玩法機制">陷阱：尖刺、落石等，觸碰即失敗。移動平台：需把握跳躍時機。</p>
+    </div>
+    <div class="常見問題">
+        <h2>三、常見問題</h2>
+        <p>輸入你的評論與反饋</p>
+        <textarea name="comment" id="comment" cols="50" rows="5">輸入你的評論與反饋</textarea>
+        <br>
+        <input type="submit" value="提交" id="submitBtn">
+        <br><br><br><br><br><br><br><br>
+    </div>
+    <div class="sat191318">
+        <p>by</p>
+        <a href="https://scratch.mit.edu/users/sat191318/">sat191318</a>
+    </div>
+</body>
+<script>
+    document.getElementById("submitBtn").addEventListener("click", function() {
+        document.getElementById("comment").value = "";
+    });
+</script>
